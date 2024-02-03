@@ -131,6 +131,6 @@ mealsEl.addEventListener('click', e => {
   getMealById(mealID);
 });
   
-  
+  //might not be bad idea to display single as a modal instad scrolling thoug...another day 
 
 
