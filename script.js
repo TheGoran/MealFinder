@@ -93,7 +93,7 @@ function addMealToDOM(meal) {
     }
   }
   single_mealEl.innerHTML = `
-        <div class="single-meal">
+        <div class="single-meal" >
             <h1>${meal.strMeal}</h1>
             <img src="${meal.strMealThumb}" alt="${meal.strMealThumb}"/>
             <div class="single-meal-info">
@@ -112,6 +112,13 @@ function addMealToDOM(meal) {
             </div>
         </div>
     `;
+  single_mealEl.scrollIntoView(
+    {
+      block: "start",
+      behavior: "smooth"
+
+    }
+  );
 }
 
 // Event Listeners
