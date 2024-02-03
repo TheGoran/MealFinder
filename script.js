@@ -118,7 +118,7 @@ function addMealToDOM(meal) {
 
 submit.addEventListener('submit', searchMeal);
 random.addEventListener('click', getRandomMeal);
-
+//Updated due to path beind deprecated
 mealsEl.addEventListener('click', e => {
   const mealID = e.target.closest('.meal-info').dataset.mealid;
   getMealById(mealID);
